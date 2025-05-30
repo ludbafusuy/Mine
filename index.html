@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION | WORLD</title>
+    <link rel="icon" href="Assets/images.jpg">
+</head>
+<style>
+    #section1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #section1 div{
+       padding: 40px;
+    }
+    #Mmenu li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #menu li {
+      display: inline-block;
+      margin-right: 20px;
+      font-size: 20px;
+    }
+
+    #menu a {
+      text-decoration: none;
+      color: white;
+    }
+
+    #menu a:hover {
+      color: #23527c;
+    }
+
+    #button {
+      width: 100px;
+      color: rgb(37, 8, 8);
+      display: flex;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background-color: #3e8e41;
+    }
+    #fvmenu{
+      display: none;
+      position:absolute;
+      width: 150px;
+      height: 200px;
+      background-color: #ccc;
+
+    }
+    #favcont:hover #fvmenu {
+      display: block;
+      z-index: 2;
+    }
+
+    #sign up {
+      padding-left: 30%;
+    }
+
+    #text:hover{
+      color: darkcyan;
+    }
+
+    #image {
+      padding-right: 50px;
+      margin-right: 50px;
+    }
+
+    #pics {
+            position: relative;
+            padding-right: 50px;
+            margin-right: 200px;
+            background-image: url("Assets/download (1).jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            background-attachment: center;
+            animation-name: changeBackground;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+     @media screen and (max-width: 666px) {
+        #sign-up {
+          color: #23527c;
+        }
+     }
+
+    @keyframes changeBackground {
+      0% {
+        background-image: url("Assets/arrival-1.jpg");
+      }
+      25% {
+        background-image: url("Assets/arrival-2.jpg");
+      }
+      50% {
+        background-image: url("Assets/arrival-3.jpg");
+      }
+      75% {
+        background-image: url("Assets/arrival-4.jpg");
+      }
+      100% {
+        background-image: url("Assets/arrival-5.jpg");
+      }
+    }
+
+</style>
+<body style="background-color: azure;">
+    <header style="display: flex; flex-wrap: wrap; background-color: rgb(245, 194, 65);">
+      <div id="logo" style="height: 30PX;">
+        <div id="main"><img src="Assets/images (1).jpg" alt="logo" style="height: 50px;"></div>
+      </div>
+      <div id="Business name" style="text-align: center; font-size: 50px; text-justify: calc(5); text-wrap: 100%; flex-grow: 5;">
+        YUSUF CLOTHING
+
+      </div>
+
+      <div id="menu">
+        <ul>
+          <li><a href="fashion.html" id="FASHION" onclick="login()">FASHION</a></li>
+          <li id="favcont"><a href="All.html" id="FAVOURITE" onclick="login()">FAVOURITE</a></li>
+          <li><a href="#" id="LIFESTYLE">LIFESTYLE</a></li>
+        </ul>
+
+      </div>
+      <!-- <div id="dropdown">
+        <a href="ImgFashion.html" class="FASHION" onclick="login()">IMAGES</a>
+      </div> -->
+
+      </div>
+    </header>
+    <div id="section1">
+        <div id="text" style="text-align: center ; font-family: sans-serif;  flex-grow: 1;">
+            <h1>
+                <br>LET'S <br>
+                <br>EXPLORE<br>
+                <br>UNIQUE<br>
+                <br>CLOTHES.<br>
+            </h1>
+            <div style="text-align: center;">
+              <a href="All.html" class="Fashion">Explore</a>
+            </div>
+        </div>
+        <div id="image" style="flex-grow: 2; height: 68vh;">
+          <div id="pics" style="height: 100%; width: 90%;"></div> 
+        </div>
+    </div>
+    <div style="display: flex;">
+      <div id="Sign-up">
+        <a style="align-items: center;" href="Form.html" class="button">SIGN UP</a>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" href="Assets/images.jpg">
+</head>
+<style>
+    form {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"]
+    input[type="phone"] {
+        width: 70%;
+        height: 20px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #3e8e41;
+    }
+    
+</style>
+<body>
+    <div>
+        <!-- <a href="#" class="button" onclick="login()">Sign up</a> -->
+        <div>
+          <!-- <form id="loginForm ">
+          <br><input type="text" id="username" placeholder="username"><br>
+          <br><input type="password" id="password" placeholder="password"><br>
+          <br><input type="email" id="email" placeholder="email"><br>
+          <br><input type="phone" id="phone" placeholder="phone"><br>
+          <br><button type="submit">Submit</button><br>
+            </form> -->
+        </div>
+        <div>
+            <form>
+                <br><label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" class="form-control">
+
+                <br><label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" required>
+
+                <br><label for="phone">Phone:</label><br>
+                <input type="text" id="phone" name="phone" required>
+
+                <br><button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

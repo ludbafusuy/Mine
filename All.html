@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .featured-products, .product-description, .testimonials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .product-grid, .testimonial-grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product, .testimonial {
+        margin: 20px;
+        width: 33%;
+        padding: 20px 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .product img, .testimonial img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+</style>
+
+<body>
+ 
+    <section class="hero">
+        <img src="Assets/welcome.webp" alt="Hero Image" width="100%" height="500px">
+        <h1>Welcome to our Clothing Store</h1>
+        <p>Discover the latest fashion trends and styles</p>
+        <button>Shop Now</button>
+    </section>
+
+  <div class="container">
+    <section class="featured-products">
+        <h2>Trending Now: <br> Our Best-Selling Pieces</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="Assets/images (3).jpg" alt="Product 1" width="200px" height="200px">
+                <h3>Product 1</h3>
+                <p>price: $19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Assets/download (2).jpg" alt="Product 2" width="200px" height="200px">
+                <h3>Product 2</h3>
+                <p>Price: $29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Assets/images (1).jpg" alt="Product 3" width="200px" height="200px">
+                <h3>Product 3</h3>
+                <p>Price: $39.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="product description">
+        <img src="Assets/images (2).jpg" alt="Product image" width="500px" height="500px">
+        <h2>ZARA</h2>
+        <p>Stay stylish and comfortable in our [FASHION | WORLD] [ZARA]</p>
+        <P>Price: $19.99</P>
+        <button>Add to cart</button>
+    </section>
+    
+
+    <section class="testimonials">
+        <h2>What Our Customers Say About Us...</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <img src="Assets/customer 1.jpg" alt="Customer 1" width="150px" height="'150px">
+                <p>"I love shopping at [YUSUF STORE]! Their clothes are always on trend an affordable."</p>
+                <h3>Customer 1</h3>
+            </div>
+            <div class="testimonial">
+                <img src="Assets/Customer 2.jpg" alt="Customer 2" width="200px" height="150px">
+                <p>"I was blown away by the quality of [YUSUF STORE] clothes. I'll definitely be back!"</p>
+                <h3>Customer 2</h3>
+            </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>
